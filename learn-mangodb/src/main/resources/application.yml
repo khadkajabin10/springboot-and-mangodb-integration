@@ -1,0 +1,14 @@
+spring:
+    mongodb:
+      uri: mongodb://jabin:30jabin30khadka@localhost:27017/ecommerce?authSource=admin
+     #               username                             databaseTouse     where user is stored i.e admin
+    data:
+      mongodb:
+        auto-index-creation: true
+      # when we did @index anotation in document it automatically create index for mangodb
+logging:
+  level:
+    root: INFO
+    org.springframework.data.mongodb: DEBUG
+    org.mongodb.driver: DEBUG
+    #it shows log that means what spring data mangodb is doing
